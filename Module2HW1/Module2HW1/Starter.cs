@@ -39,6 +39,14 @@ namespace Module2HW1
 
                 _counter++;
             }
+
+            var sb = new StringBuilder();
+            for (int i = 0; i < Logger.GetResults().Length; i++)
+            {
+                sb.Append(Logger.GetResults()[i] + "\n");
+            }
+
+            File.WriteAllText("log.txt", sb.ToString());
         }
     }
 }
