@@ -6,11 +6,10 @@ using System.Threading.Tasks;
 
 namespace Module2HW1
 {
-    public class Program
+    public enum LogType
     {
-        public static void Main(string[] args)
-        {
-            Starter.Run();
-        }
+        Info,
+        Warning,
+        Error
     }
 }
